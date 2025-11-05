@@ -1,4 +1,4 @@
-"""
+
 print("Teste")
 
 num1 = 10
@@ -22,11 +22,10 @@ print(num1 / num2)
 
 #módulo
 print(num1 % 2)
-"""
+
 
 #Saída de dados
 
-"""
 nome = "Hospitalina"
 idade = 50
 peso = 55.3
@@ -41,9 +40,7 @@ print("----------------------------------------")
 #Forma nova da nova
 print(f"{nome} tem {idade} anos e pesa {peso} kg.")
 print("----------------------------------------")
-"""
 
-"""
 #Entrada de dados
 nome = input("Digite seu nome: ")
 idade = input("Digite sua idade: ")
@@ -52,7 +49,6 @@ peso = input("Digite seu peso: ")
 print("----------------------------------------")
 print("{} tem {} anos e pesa {} kg.".format(nome, idade, peso))
 print("----------------------------------------")
-"""
 
 #Estruturas condicionais
 
