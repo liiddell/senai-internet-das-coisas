@@ -50,7 +50,7 @@ while x <=10:
     print(n+x)
     x += 1
 
-"""
+
 # Tabuada adição (contador)
 
 x = 1
@@ -62,3 +62,61 @@ while x <= 10:
 print(soma)
 
 
+#interromper repetição
+
+x = 1
+while x <= 10:
+    if x == 7:
+        break
+    print(x)
+    x += 1
+
+
+
+import time
+
+print("SORTEIO")
+x = 0
+while True:
+    num = int(input("Digite um número: "))
+    if num == 0:
+        break
+    x = x + num
+print("Somando...")
+y = 5
+while y <= 5:
+    time.sleep(1)
+    print(y)
+    y = y - 1
+    if y == 0:
+        break
+print("A soma é:", x)
+
+for i in range(5):
+    print(i)
+
+
+for x in range (1,11):
+    print(x)
+
+
+for c in "Python":
+    print(c)
+
+
+lista = [1,2,3,4,5,6,7,8,9]
+for item in lista:
+    print(item)
+
+lista2 = ['Processador', 'Memória', 'Teclado', 'Mouse']
+for item in lista2:
+    print(item)
+
+
+
+import random
+
+numero = random.randint(1,10)
+print(numero)
+
+"""
