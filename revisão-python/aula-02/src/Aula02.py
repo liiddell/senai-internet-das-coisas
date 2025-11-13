@@ -1,6 +1,6 @@
 #If, elif e else
 
-"""
+
 nota = float (input("Digite a nota: "))
 if nota >= 7:
     print("Aprovado!")
@@ -118,5 +118,3 @@ import random
 
 numero = random.randint(1,10)
 print(numero)
-
-"""
