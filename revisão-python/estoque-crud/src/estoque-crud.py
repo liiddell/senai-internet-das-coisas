@@ -20,9 +20,24 @@ def listar_item():
             print(f"Código: {item[0]} | Descrição: {item[1]} | Fabricante: {item[2]} | Quantidade: {item[3]} | Preço: {item[4]}")
 
 def atualizar_item():
+    codigo = input("Digite o código do item que deseja atualizar: ")
+
     with open("estoque.txt", "r") as arquivo:
+        linhas = arquivo.readlines()
 
-
+    with open("estoque.txt", "w") as arquivo:
+        for linha in linhas:
+            item = linha.strip().split(",")
+            if item[0] == codigo:
+                print("Item encontrado, digite os novos dados: ")
+                nova_descricao = input("Nova descrição: ")
+                nova_fabricante = input("Nova fabricante: ")
+                nova_quantidade = int (input("Nova quantidade: "))
+                novo_preco = float (input("Novo preço:"))
+                arquivo.write(f" {codigo}, {nova_descricao}, {nova_fabricante}, {nova_quantidade}, {novo_preco}\n")
+                print("Item alterado com sucesso!")
+            else:
+                arquivo.write(linha)
 
 def menu():
     while True:
@@ -38,6 +53,8 @@ def menu():
             adicionar_item()
         elif opcao == "2":
             listar_item()
+        elif opcao == "3":
+            atualizar_item()
         elif opcao == "5":
             break
         else:
